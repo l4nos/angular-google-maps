@@ -1,0 +1,26 @@
+{
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
+  "name": "@lvmaps/drawing",
+  "description": "Angular Google Maps (AGM) extension for google maps drawing library",
+  "keywords": [
+    "angular-google-maps",
+    "angular",
+    "google-maps",
+    "agm",
+    "map-drawing"
+  ],
+  "peerDependencies": {
+    "@angular/core": "^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0",
+    "@lvmaps/core": "^1.1.0"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "./index.ts",
+      "umdId": "ngmaps.drawing",
+      "umdModuleIds": {
+        "@lvmaps/core": "ngmaps.core"
+      }
+    },
+    "dest": "../../dist/@lvmaps/drawing"
+  }
+}
